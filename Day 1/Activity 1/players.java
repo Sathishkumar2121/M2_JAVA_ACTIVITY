@@ -5,15 +5,15 @@ class players {
 
     public static void main(String args[]) {
 
-        String P1 = "";
-        String P2 = "";
+        String Player1 = "";
+        String Player2 = "";
 
         String fname = "";
         String lname = "";
         String lname1 = "";
         String lname2 = "";
 
-        String str, str2;
+        String str, str1;
 
         int space;
         int i = 0;
@@ -27,20 +27,20 @@ class players {
                 space = str.indexOf(" ");
                 fname = str.substring(0, space);
 
-                str2 = str.toLowerCase();
+                str1 = str.toLowerCase();
                 lname = str.substring(space);
 
-                str2 = lname.toLowerCase();
+                str1 = lname.toLowerCase();
                 j++;
 
             }
             if (i == 0) {
-                P1 = fname;
+                Player1 = fname;
                 lname1 = lname;
             }
 
             else if (i == 1) {
-                P2 = fname;
+                Player2 = fname;
                 lname2 = lname;
             }
 
